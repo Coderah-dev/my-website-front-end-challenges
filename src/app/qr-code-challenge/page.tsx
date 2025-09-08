@@ -11,7 +11,7 @@ export default function HomePage() {
       {/* Card */}
       <div className='mt-12 flex flex-col items-center bg-white w-80 h-[31.1875rem] rounded-2xl shadow-lg p-4'>
         {/* QR Image */}
-        <div className='relative w-72 h-72 mt-4'>
+        <div className='relative w-72 h-72'>
           <Image
             src='/qr-challenge/image-qr-code.png'
             alt='QR code preview'
