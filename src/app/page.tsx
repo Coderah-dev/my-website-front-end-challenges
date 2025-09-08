@@ -1,14 +1,22 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import data from "../app/data.json"; // adjust path if your data.json is in /public or elsewhere
 import Image from "next/image";
+import data from "./data.json";
+
+type Card = {
+  title: string;
+  description: string;
+  link: string;
+  image: string;
+};
 
 export default function HomePage() {
-  const [cards, setCards] = useState([]);
+  const [cards, setCards] = useState<Card[]>([]);
 
   useEffect(() => {
-    return setCards(data); // could also fetch from API later
+    setCards(data); // ✅ loads JSON data
   }, []);
 
   return (
