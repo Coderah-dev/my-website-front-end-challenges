@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { Outfit } from "next/font/google";
+
+const outfit = Outfit({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function HomePage() {
   return (
@@ -22,10 +25,12 @@ export default function HomePage() {
         </div>
 
         {/* Text */}
-        <h2 className='mt-6 text-xl font-bold text-center text-gray-800'>
+        <h2
+          className={`mt-6 text-2xl ${outfit} font-bold text-center text-slate-900 leading-tight tracking-normal`}>
           Improve your front-end skills by building projects
         </h2>
-        <p className='mt-3 text-center text-gray-500 px-4'>
+        <p
+          className={`mt-4 text-sm ${outfit} font-normal text-center text-slate-500 leading-normal tracking-wide`}>
           Scan the QR code to visit Frontend Mentor and take your coding skills
           to the next level
         </p>
