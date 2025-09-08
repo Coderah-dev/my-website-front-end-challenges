@@ -22,9 +22,9 @@ export default function HomePage() {
         </div>
 
         {/* Text */}
-        <h3 className='mt-6 text-xl font-bold text-center text-gray-800'>
+        <h2 className='mt-6 text-xl font-bold text-center text-gray-800'>
           Improve your front-end skills by building projects
-        </h3>
+        </h2>
         <p className='mt-3 text-center text-gray-500 px-4'>
           Scan the QR code to visit Frontend Mentor and take your coding skills
           to the next level
